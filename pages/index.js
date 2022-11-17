@@ -4,8 +4,8 @@ import ReactMarkdown from 'react-markdown'
 
 import { fetchHeader, fetchAcciones, fetchLogos, strapiImageUrl } from '../services'
 import { MAIL_TO_INFO } from '../constants'
-import Navbar from '../components/NavBar'
-import Card from '../components/Card'
+import Navbar from '../../components/NavBar'
+import Card from '../../components/Card'
 
 export default function Home({ header, acciones, logos }) {
   return (
