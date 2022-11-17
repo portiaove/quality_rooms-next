@@ -4,8 +4,8 @@ import ReactMarkdown from 'react-markdown'
 
 import { fetchHeader, fetchAcciones, fetchLogos, strapiImageUrl } from '../services'
 import { MAIL_TO_INFO } from '../constants'
-import Navbar from '../../components/NavBar'
-import Card from '../../components/Card'
+// import Navbar from '../components/NavBar'
+import Card from '../components/Card'
 
 export default function Home({ header, acciones, logos }) {
   return (
@@ -15,7 +15,7 @@ export default function Home({ header, acciones, logos }) {
         <meta name='description' content='Quality Rooms - Gestión de Inmuebles' />
         <link rel='icon' href='/favicon.png' />
       </Head>
-      <Navbar logo={logos.estrechasin}></Navbar>
+      {/* <Navbar logo={logos.estrechasin}></Navbar> */}
       <div className='container header-container'>
         <h1>{header?.title}</h1>
         <img
