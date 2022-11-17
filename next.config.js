@@ -10,4 +10,11 @@ const imageConfig = {
   }
 }
 
-module.exports = {...nextConfig, ...imageConfig}
+module.exports = {
+  ...nextConfig, 
+  ...imageConfig, 
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
+}
