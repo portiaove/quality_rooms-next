@@ -1,4 +1,4 @@
-const STRAPI_BASE_URL = 'http://localhost:1337'
+const STRAPI_BASE_URL = process.env.BASE_URL ? process.env.BASE_URL : 'http://localhost:1337'
 
 export const strapiImageUrl = url => {
   return `${STRAPI_BASE_URL}${url}`
